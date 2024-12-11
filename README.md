@@ -1,16 +1,16 @@
 # Money Field for Laravel Nova
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vyuldashev/nova-money-field.svg?style=flat-square)](https://packagist.org/packages/vyuldashev/nova-money-field)
-[![Total Downloads](https://img.shields.io/packagist/dt/vyuldashev/nova-money-field.svg?style=flat-square)](https://packagist.org/packages/vyuldashev/nova-money-field)
+This is a fork of [vyuldashev/nova-money-field](https://github.com/vyuldashev/nova-money-field) with the following changes:
 
-![screenshot 1](https://raw.githubusercontent.com/vyuldashev/nova-money-field/master/docs/user-details.png)
+- Added support for moneyphp v4.0
+
 
 ## Installation
 
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require vyuldashev/nova-money-field
+composer require swiftmade/nova-money-field
 ```
 
 ## Usage
