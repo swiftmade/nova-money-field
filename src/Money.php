@@ -42,8 +42,9 @@ class Money extends Number
             ->fillUsing(function (NovaRequest $request, $model, $attribute, $requestAttribute) use ($currency) {
                 $value = $request[$requestAttribute];
 
+                // Rounded, since 1.15 * 100 is 114.99999999999999 in floats.
                 if ($this->inMinorUnits) {
-                    $value *= $this->minorUnit($currency);
+                    $value = (int) round($value * $this->minorUnit($currency));
                 }
 
                 $model->{$attribute} = $value;
